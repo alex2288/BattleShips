@@ -2,11 +2,11 @@
 #include <iostream>
 #include <Windows.h>
 #include <conio.h>
-class Controller
-{
+
+class Controller {
 public:
 	Controller();
 	~Controller();
-	void MainLoop();
+	void mainLoop();
 };
 

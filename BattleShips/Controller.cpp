@@ -1,8 +1,6 @@
 #include "Controller.h"
 #include "Model.h"
 
-
-
 Controller::Controller()
 {
 }
@@ -12,7 +10,7 @@ Controller::~Controller()
 {
 }
 
-void Controller::MainLoop() {
+void Controller::mainLoop() {
 	HANDLE threadHandle;
 	unsigned long threadID;
 	threadHandle = CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE).Run, (LPVOID)this, 0, &threadID);

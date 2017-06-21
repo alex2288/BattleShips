@@ -2,6 +2,7 @@
 #include "Coordinate.h"
 #include <stdlib.h> 
 #include <time.h>  
+
 class Ship {
 public:
 	short size;
