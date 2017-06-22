@@ -145,7 +145,6 @@
     <ClCompile Include="Coordinate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
-    <ClCompile Include="Ship.cpp" />
     <ClCompile Include="ShipSize1.cpp" />
     <ClCompile Include="ShipSize2.cpp" />
     <ClCompile Include="ShipSize3.cpp" />
@@ -159,7 +158,6 @@
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Coordinate.h" />
     <ClInclude Include="Model.h" />
-    <ClInclude Include="Ship.h" />
     <ClInclude Include="ShipSize1.h" />
     <ClInclude Include="ShipSize2.h" />
     <ClInclude Include="ShipSize3.h" />

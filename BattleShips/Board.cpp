@@ -3,29 +3,29 @@
 Board::Board() {
 	this->initCoordinates();
 	for (int i = 0; i < SHIP1_COUNT; i++) {
-		ships1[i] = allocShip(4);
+		//ships1[i] = (ShipSize1)allocShip(SHIP_SIZE1);
 	}
 	for (int i = 0; i < SHIP2_COUNT; i++) {
-		ships2[i] = allocShip(3);
+		//ships2[i] = (ShipSize2)allocShip(SHIP_SIZE2);
 	}
 	for (int i = 0; i < SHIP3_COUNT; i++) {
-		ships3[i] = allocShip(2);
+		//ships3[i] = (ShipSize3)allocShip(SHIP_SIZE3);
 	}
 	for (int i = 0; i < SHIP4_COUNT; i++) {
-		ships4[i] = allocShip(1);
+		//ships4[i] = (ShipSize4)allocShip(SHIP_SIZE4);
 	}
 }
 
-Ship * Board::allocShip(short size) {
+ShipSize4 * Board::allocShip(short size) {
 	srand((unsigned int)time(0));
 	bool orientation;
 	short x, y;
 	do {
 		orientation = rand() % 1;
-		x = rand() % 10;
-		y = rand() % 10;
+		x = rand() % BOARD_SIZE;
+		y = rand() % BOARD_SIZE;
 	} while (!checkShipAvailability(&array[x][y], size, orientation));
-	Ship * result = new Ship(&array, size, orientation, x, y);
+	ShipSize4 * result = new ShipSize4(&array, orientation, x, y);
 	return result;
 }
 

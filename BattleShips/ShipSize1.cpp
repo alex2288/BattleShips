@@ -12,6 +12,7 @@ ShipSize1::ShipSize1(Coordinate(*c)[10][10], bool orientation, short x, short y)
 	}
 }
 
+
 ShipSize1::~ShipSize1()
 {
 }
